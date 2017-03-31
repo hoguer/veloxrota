@@ -1,0 +1,50 @@
+@()(implicit request: play.api.mvc.Request[Any])
+
+@item(sponsor_url: String, logo_filename: String) = {
+  <span class="sponsor">
+    <a href="@sponsor_url" target="_blank">
+      <img width="250" src="@routes.Assets.at("images/sponsors/" + logo_filename)"/>
+    </a>
+  </span>
+}
+
+@main(title="2005-2015 Sponsors") {
+  <div id="pagemenu">
+    <span class="page-title">2005-2015 Sponsors</span>
+  </div>
+
+  <div class="sponsors">
+
+    @item(sponsor_url="http://www.sheaconcrete.com", logo_filename="shea.png")
+    @item(sponsor_url="http://firstresponsecs.com/", logo_filename="FirstResponse.png")
+    @item(sponsor_url="http://www.natgolaw.com", logo_filename="Nathanson.bmp")
+    @item(sponsor_url="https://www.karlstorz.com/cps/rde/xchg/karlstorz-en/hs.xsl/index.htm", logo_filename="STORZ-ENDOSKOPE-T.gif")
+    @item(sponsor_url="http://www.icadesigns.com", logo_filename="ICADLogo.jpg")
+    @item(sponsor_url="http://cambridgereprographics.com/", logo_filename="cambridgerepro.png")
+    @item(sponsor_url="https://www.bikersedge.com", logo_filename="bikers.jpg")
+    @item(sponsor_url="http://www.samueladams.com/", logo_filename="SamAdams.png")
+    @item(sponsor_url="http://www.quadcycles.com", logo_filename="QuadCycles.png")
+    @item(sponsor_url="http://www.jracycles.com/", logo_filename="jra.png")
+    @item(sponsor_url="#", logo_filename="amsterdamfoundation.png")
+    @item(sponsor_url="http://www.bigpictureframing.com/cambridge/index.html", logo_filename="bigpictureframing.png")
+    @item(sponsor_url="http://thetrainingroomboston.com/", logo_filename="TheTrainingRoom.png")
+    @item(sponsor_url="http://mbcr.net/", logo_filename="MBCR.png")
+    @item(sponsor_url="http://drinkcodeblue.com/", logo_filename="codeblue.jpg")
+    @item(sponsor_url="http://www.parrellioptical.com/", logo_filename="parrelli.png")
+    @item(sponsor_url="http://www.stage5cycling.com", logo_filename="stage5.png")
+    @item(sponsor_url="http://precisionendurance.com/", logo_filename="PE.png")
+    @item(sponsor_url="http://www.iggysbread.com/", logo_filename="Iggys.png")
+    @item(sponsor_url="http://www.lcca.com/facility.asp?id=174", logo_filename="lccmv.png")
+    @item(sponsor_url="http://www.sendbread.com/", logo_filename="WhenPigsFly.png")
+    @item(sponsor_url="http://www.gatorade.com/", logo_filename="gatorade.jpg")
+    @item(sponsor_url="http://www.inkkiosk.com/", logo_filename="inkkiosk.png")
+    @item(sponsor_url="http://www.activerecoveryboston.com/", logo_filename="ActiveRecovery.png")
+    @item(sponsor_url="http://jhancock.com/", logo_filename="JohnHancock.png")
+    @item(sponsor_url="http://stores.shop.ebay.com/Augies-Birdhouse_Team-Velox-Rota_W0QQ_fsubZ272842119QQ_sidZ499470839QQ_trksidZp4634Q2ec0Q2em322", logo_filename="augiesbirdhouse.png")
+    @item(sponsor_url="http://www.synthesisstudios.com", logo_filename="synthesis.png")
+    @item(sponsor_url="http://www.eleven.net/", logo_filename="eleven.gif")
+    @item(sponsor_url="http://www.roadid.net/", logo_filename="road_id.gif")
+
+  </div>
+
+}

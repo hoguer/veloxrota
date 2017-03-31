@@ -1,0 +1,46 @@
+@()(implicit request: play.api.mvc.Request[Any])
+
+@item(path: String, name: String, subitems: Boolean = false, transient: Boolean = false) = {
+  @defining(request.path == path) { selected =>
+    @if(!selected || !transient) {
+      <li class="@{if(subitems){"has_subnav"}}">
+	<a class="primary_nav_item @{if(selected) {"selected "}}@{if(subitems){"has_subnav"}}" href="@path">@name</a>
+	@if(name=="Events") {
+	    <ul>
+	      <li><a href="/bikems">bikeMS</a></li>
+	      <li><a href="/endurance_events">Endurance Events</a></li>
+	      <li><a href="/fundraisers">Fundraisers</a></li>
+	    </ul>
+	}
+	@if(name=="Sponsors") {
+	    <ul>
+	      <li><a href="/sponsors/2017">2017</a></li>
+	      <li><a href="/sponsors/2016">2016</a></li>
+	      <li><a href="/sponsors/2005">2005-2015</a></li>
+	      <li><a href="/sponsors/become_a_sponsor">Become a Sponsor</a></li>
+	    </ul>
+	}
+        @if(name=="Team Gear") {
+            <ul>
+              <li><a href="/team_gear/kit">Kit</a></li>
+              <li><a href="/team_gear/active_wear">Active Wear</a></li>
+            </ul>
+        }
+      </li>
+    }
+  }
+}
+
+<div id="site-map">
+  <div class="center">
+    <ul id="mainNav">
+    @item(path="/", name="Home", transient=true)
+    @item(path="#", name="Events", subitems=true)
+    @item(path="/resources", name="Resources")
+    @item(path="/sponsors", name="Sponsors", subitems=true)
+    @item(path="/teamMain", name="Team")
+    @item(path="#", name="Team Gear")
+    @item(path="/training", name="Training")
+    </ul>
+  </div>
+</div>

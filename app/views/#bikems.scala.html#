@@ -1,0 +1,192 @@
+@()(implicit request: play.api.mvc.Request[Any])
+
+@main(title="bikeMS", bodyId="events") {
+
+<p>
+Team Velox Rota has members participating in the following events.  If you’d like to join the team, the button corresponding with the event will bring you directly to the registration page at the National MS Society.  If you do not see an event that you’d like to do, please email <a href="mailto:info&#64;veloxrota.org">info&#64;veloxrota.org</a> and we will add it to the list.  
+</p>
+
+<div class="event">
+  <h3>Cape Cod Getaway</h3>
+  <div class="date_loc">June 24-25, 2017 &mdash; Quincy, MA</div>
+  <p>
+    2-Day, 150 miles from Quincy to Bourne, MA on day one.  Day 2 you cross the Bourne Bridge and ride along Cape Cod, and finish in Provincetown </br>
+    <span style="font-style:italic;">Saturday: 75 or 100 miles; Sunday 75 miles</span></br>
+    <span style="font-style:italic;font-weight:bold;">Use Team20 at registration for $20 off</span>
+  </p>
+  <a role="button" class="button" 
+     href="http://main.nationalmssociety.org/site/TR/Bike/MAMBikeEvents?team_id=491542&pg=team&fr_id=28124" 
+     target="_blank">
+    Join TVR at the CCG
+  </a>
+</div>
+
+<div class="event">
+  <h3>Ride the Vineyard</h3>
+  <div class="date_loc">May 6, 2017 &mdash; Oak Bluffs, MA</div>
+  <p>
+    For one day enjoy 20, 30 or 63 miles of beautiful ocean views around the island of Martha’s Vineyard
+  </p>
+  <a role="button" class="button" 
+     href="http://main.nationalmssociety.org/site/TR/Bike/MAMBikeEvents/1007778108?pg=team&fr_id=28222&team_id=500461&_ga=1.179975652.1319558599.1451504890" 
+     target="_blank">
+    Join TVR on the Vineyard
+  </a>
+</div>
+
+<div class="event">
+  <h3>Praxair off the Chain</h3>
+  <div class="date_loc">June 4, 2017 &mdash; Windsor, CT</div>
+  <p>
+    A bikeMS ride for the entire family!  This event includes a 2 mile kids ride, and 10, 25, 50 and 100 mile rides.  When challenging yourself on the 100 mile ride, you’ll cross to the west side of the Connecticut river and ride the countryside of CT.
+  </p>
+  <a role="button" class="button" 
+     href="http://main.nationalmssociety.org/goto/TVRWindsor2017"
+     target="_blank">
+    Join TVR in CT
+  </a>
+</div>
+
+<div class="event">
+  <h3>Ride the Rhode</h3>
+  <div class="date_loc">June 10-11, 2017 &mdash; Kingston, RI</div>
+  <p>
+    30th annual 2-day ride through the country roads and scenic coast of Rhode Island.  Saturday only ride option is available.  Celebrate Saturday afternoon with a BBQ and in the Harpoon Beer Garden.</br>
+    <span style="font-style:italic">Saturday: 35, 75 or 100 miles; Sunday: 75mile</span>
+  </p>
+  <a role="button" class="button" 
+     href="http://main.nationalmssociety.org/site/TR/Bike/MAMBikeEvents?team_id=505726&pg=team&fr_id=28104"
+     target="_blank">
+    Join TVR in RI
+  </a>
+</div>
+
+<div class="event">
+  <h3>Chesapeake Challenge</h3>
+  <div class="date_loc">June 17-18, 2017 &mdash; Easton, MD</div>
+  <p>
+    This ride features a variety of route options winding through the flat and rural Eastern Shore of Maryland. The two-day event starts and finishes each day at the Talbot County Community Center in Easton, MD.  </br>
+    <span style="font-style:italic">Saturday: 34, 69 or 100 miles; Sunday: 30 or 50 miles</span>
+  </p>
+  <a role="button" class="button" 
+     href="http://main.nationalmssociety.org/site/TR/Bike/MDMBikeEvents/908025249?pg=team&fr_id=28915&team_id=504316&_ga=1.188372456.1319558599.1451504890"
+     target="_blank">
+    Join TVR in MD
+  </a>
+</div>
+
+<div class="event">
+  <h3>Finger Lakes Challenge</h3>
+  <div class="date_loc">July 8-9, 2017 &mdash; Finger Lakes, NY</div>
+  <p>
+    This scenic two day ride will have chatty routes and sweaty routes around the Finger Lakes.  We will celebrate the 100th Anniversary of the Women’s Suffrage Movement on Sunday.</br>
+    <span style="font-style:italic">Saturday: 30, 60, 100  Sunday: 25 (Guided Tour of the Women’s Suffrage Movement) or 50</span>
+  </p>
+  <a role="button" class="button"
+     href="http://main.nationalmssociety.org/site/TR/Bike/NYRBikeEvents/17084334?pg=team&fr_id=28936&team_id=511560&_ga=1.121997775.57863247.1486045803"
+     target="_blank">
+    Join TVR in The Finger Lakes
+  </a>
+</div>
+
+<div class="event">
+  <h3>Minuteman Ride</h3>
+  <div class="date_loc">July 15, 2017 &mdash; Concord, MA</div>
+  <p>
+    Through the historic Revolutionary-era of Concord, and surrounding metro-west towns, you’ll pass through where the "shot heard around the world" was fired.  </br>
+    <span style="font-style:italic">Route Options: 25 or 60 miles</span>
+  </p>
+  <a role="button" class="button" 
+     href="http://main.nationalmssociety.org/site/TR/Bike/MAMBikeEvents/1845132104?pg=team&fr_id=28942&team_id=505727&_ga=1.108762434.1319558599.1451504890"
+     target="_blank">
+    Join TVR at the Minuteman
+  </a>
+</div>
+
+<div class="event">
+  <h3>Green Mountain Getaway</h3>
+  <div class="date_loc">August 5, 2017 &mdash; Burlington, VT</div>
+  <p>
+    Choose from three routes varying in length and challenge in scenic Vermont.  The 30 mile is appropriate for cyclist of all levels, whereas the 60 & 100 offer more challenges with climbs Vermont is known for, but be rewarded with their descents! 
+  </p>
+  <a role="button" class="button" 
+     href="http://main.nationalmssociety.org/site/TR/Bike/MAMBikeEvents/1089572701?pg=team&fr_id=28923&team_id=505735&_ga=1.175143266.1319558599.1451504890"
+     target="_blank">
+    Join TVR in VT
+  </a>
+</div>
+
+<div class="event">
+  <h3>Great Maine Getaway</h3>
+  <div class="date_loc">August 12-13, 2017 &mdash; Biddeford, ME</div>
+  <p>
+    During this two-day ride in Biddeford, Maine’s finest coastal destination.  Cyclist will also experience the beauty of the southern coastline, including an up close look at “Walker's Point,” the summer home of President George H.W. Bush.  
+    <span style="font-style:italic">Route options from 25-100 miles</span>
+  </p>
+  <a role="button" class="button" 
+     href="http://main.nationalmssociety.org/site/TR/Bike/MAMBikeEvents/1914672698?pg=team&fr_id=28205&team_id=505733&_ga=1.150690166.1319558599.1451504890"
+     target="_blank">
+    Join TVR in Maine
+  </a>
+</div>
+
+<div class="event">
+  <h3>New Hampshire Seacoast Escape</h3>
+  <div class="date_loc">August 26, 2017 &mdash; Stratham, NH</div>
+  <p>
+    Enjoy the scenic, less-traveled roads and some main streets from a few seaside villages through the beauty of New Hampshire for 25 or 60 miles. On the 60 mile route, enjoy touching wheel into the coast of Maine.  
+  </p>
+  <a role="button" class="button" 
+     href="http://main.nationalmssociety.org/site/TR/Bike/MAMBikeEvents/1333357488?pg=team&fr_id=28949&team_id=505730&_ga=1.174610786.1319558599.1451504890"
+     target="_blank">
+    Join TVR in NH
+  </a>
+</div>
+
+<div class="event">
+  <h3>Tour de Beach</h3>
+  <div class="date_loc">September 16-17, 2017 &mdash; Birmingham, AL</div>
+  <p>
+    This two-day ride is the perfect way to get your Gulf vacation and a wonderful ride! Our routes take cyclists along the beautiful Gulf Coast and communities dotting the Mobile Bay. If 150 miles isn't a big enough challenge you can join us on for the third annual Bike MS: 450 on September 14th in Calera to Greenville (100 miles), then onto Atmore (100 miles), continuing the 3rd day to Orange Beach (100 miles).  You’ll then join the Tour de Beach Saturday/Sunday riders to finish your 450 miles. 
+    <span style="font-style:italic">Saturday and Sunday Route Options: 24, 45, or 75 miles</span>
+  </p>
+  <a role="button" class="button"
+     href="http://main.nationalmssociety.org/goto/TVR2017TourdeBeach"
+     target="_blank">
+    Join TVR in Alabama
+  </a>
+</div>
+
+<div class="event">
+  <h3>City to Shore</h3>
+  <div class="date_loc">September 23-24, 2017 &mdash; Cherry Hill, NJ</div>
+  <p>
+    From 25-180 miles, this ride will take you through the flat terrain and back roads of South Jersey to the blueberry fields of Hammonton finishing in family-friendly Ocean City.</br>
+    Saturday Only Option</br>
+    <span style="font-style:italic">Saturday: 25, 45 , 80 or 100; Sunday: 80 miles</span>
+  </p>
+  <a role="button" class="button"
+     href="http://main.nationalmssociety.org/site/TR/Bike/PAEBikeEvents/742336559?pg=team&fr_id=28216&team_id=512056&_ga=1.12503664.57863247.1486045803"
+     target="_blank">
+    Join TVR in NJ
+  </a>
+</div>
+
+<div class="event">
+  <h3>New York City</h3>
+  <div class="date_loc">October 22, 2017 &mdash; Manhattan, NY</div>
+  <p>
+    Riders will travel down the West Side highway, through the holland tunnel, through NJ, back over the George Washington Bridge and end at Pier 92/94 for the 50 &100 miles. </br>
+    For the 30 mile route, rides will be escorted around the outside of Manhattan by NYC finest.
+  </p>
+  <span role="button" class="button">
+    Check     Check back </br>
+    9/1/2017 to </br>
+    Join TVR in NYC
+  </span>back </br>
+    9/1/2017 to </br>
+    Join TVR in NYC
+  </span>
+</div>
+
+}

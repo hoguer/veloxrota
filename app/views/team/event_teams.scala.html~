@@ -1,0 +1,11 @@
+@()(implicit request: play.api.mvc.Request[Any])
+
+@mainDev(title="Become a Sponsor") {
+  <div id="pagemenu">
+    <span class="page-title">Become a sponsor</span>
+  </div>
+
+  <div class="sponsors">
+    <p>Form in progress</p>
+  </div>
+}

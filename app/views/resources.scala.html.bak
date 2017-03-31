@@ -1,0 +1,143 @@
+@()(implicit request: play.api.mvc.Request[Any])
+
+@main(title = "Rider Resources") {
+  <div id="pagemenu">
+    <span class="page-title">Rider Resources</span>
+  </div>
+
+  <div class="resources smokebox">
+    <div class="title">Fundraising</div>
+
+    <div class="resource">
+      <img src="@routes.Assets.at("images/word.png")" width="32" height="32"/>
+      <a href="@routes.Assets.at("resources/FundraisingRequestTemplate.doc")">
+        Fundraising Request Template
+      </a>
+    </div>
+
+    <div class="resource">
+      <img src="@routes.Assets.at("images/word.png")" width="32" height="32"/>
+      <a href="@routes.Assets.at("resources/SponsorshipLetterTemplate.doc")">
+        Team Sponsorship Template
+      </a>
+    </div>
+
+    <div class="resource">
+      <img src="@routes.Assets.at("images/pdf.png")" width="32" height="32"/>
+      <a href="@routes.Assets.at("resources/TVR-Brochure.pdf")">
+        Sponsorship Brochure
+      </a>
+    </div>
+
+    <div class="resource">
+      <img src="@routes.Assets.at("images/pdf.png")" width="32" height="32"/>
+      <a href="@routes.Assets.at("resources/NMSS-Tax-Letter.pdf")">
+        National MS Society Introduction Letter
+      </a>
+    </div>
+
+    <div class="resource">
+      <img src="@routes.Assets.at("images/pdf.png")" width="32" height="32"/>
+      <a href="@routes.Assets.at("resources/IRS-501c3.pdf")">
+        IRS 501(c)(3) Tax Exemption
+      </a>
+    </div>
+  </div>
+
+  <div class="resources smokebox">
+    <div class="title">Logistics</div>
+
+    <div class="resource">
+      <img src="@routes.Assets.at("images/pdf.png")" width="32" height="32"/>
+      <a href="@routes.Assets.at("resources/VeloxRotaHandbook2010.pdf")">
+        Team Handbook
+      </a>
+    </div>
+
+    <div class="resource">
+      <img src="@routes.Assets.at("images/pdf.png")" width="32" height="32"/>
+      <a href="@routes.Assets.at("resources/PackingList.pdf")">
+        Packing List
+      </a>
+    </div>
+  </div>
+
+  <div class="resources smokebox">
+    <div class="title">Links</div>
+
+    <div class="resource">
+      <img src="@routes.Assets.at("images/ms_logo_small.png")" width="40" height="40"/>
+      <a href="http://main.nationalmssociety.org/site/TR/Bike/MAMBikeEvents?pg=team&fr_id=25096&team_id=403874">
+        TVR page on the National MS Society's website
+      </a>
+    </div>
+
+    <div class="resource">
+      <img src="@routes.Assets.at("images/facebook.jpeg")" width="40" height="40"/>
+      <a href="http://www.facebook.com/groups/49241088210/">
+        TVR Facebook Group
+      </a>
+    </div>
+
+    <div class="resource">
+      <img src="@routes.Assets.at("images/massbike.png")" width="40" height="40"/>
+      <a href="http://massbike.org">
+        MassBike, become a member today!
+      </a>
+    </div>
+  </div>
+
+  <div class="resources smokebox">
+    <div class="title">Team Uniform</div>
+
+    <div class="resource">
+      <img src="@routes.Assets.at("images/voler_thumb.png")" width="40" height="40"/>
+      <a href="https://teamorder.serviziocorse.com/index.aspx?pc=B718D44D-AF3E-4573-8E77-37BA47022805">
+        2016 Kit Ordering Page
+      </a>
+    </div>
+      </div>
+
+  <div class="resources smokebox">
+    <div class="title">2009 Photos</div>
+
+    <span class="photo-album">
+      <a href="http://www.kodakgallery.com/gallery/creativeapps/slideShow/Main.jsp?token=193461644309%3A1611727621" target="_blank">
+        <img src="@routes.Assets.at("images/2009-michelle-photos.jpg")"/>
+        <span>Photos from Michelle</span>
+      </a>
+    </span>
+
+    <span class="photo-album">
+      <a href="http://www.kodakgallery.com/gallery/creativeapps/slideShow/Main.jsp?token=293461644309%3A2021316299" target="_blank">
+        <img src="@routes.Assets.at("images/2009-jana-photos.jpg")"/>
+        <span>Photos from Jana</span>
+      </a>
+    </span>
+  </div>
+
+  <div class="resources smokebox">
+    <div class="title">2007-2008 Photos</div>
+
+    <div class="resource">
+      <img src="@routes.Assets.at("images/photos.png")" width="32" height="32"/>
+      <a href="http://www.kodakgallery.com/ShareLanding.action?c=qphdk9t.6qh9wz09&x=0&y=-ywizwg&localeid=en_US">
+          2008's ride, Album 1
+      </a>
+    </div>
+
+    <div class="resource">
+      <img src="@routes.Assets.at("images/photos2.png")" width="32" height="32"/>
+      <a href="http://www.kodakgallery.com/ShareLanding.action?c=qphdk9t.1ebd2wix&x=0&y=htaumm&localeid=en_US">
+          2008's ride, Album 2
+      </a>
+    </div>
+
+    <div class="resource">
+      <img src="@routes.Assets.at("images/photos3.png")" width="32" height="32"/>
+      <a href="http://www.kodakgallery.com/ShareLanding.action?c=qphdk9t.c9sq4f0p&x=0&y=-aesfe6&localeid=en_US">
+          Even more photos from 2007 and 2008
+      </a>
+    </div>
+  </div>
+}

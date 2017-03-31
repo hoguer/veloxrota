@@ -1,0 +1,28 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index()
+GET     /teamMain                   controllers.Application.teamMain()
+GET 	/team			    controllers.Application.team()
+GET 	/team/board		    controllers.Application.board()
+GET 	/team/champions		    controllers.Application.champions()
+GET 	/team/event_teams	    controllers.Application.event_teams()
+GET 	/team/why_i_ride	    controllers.Application.why_i_ride()
+GET     /team/:name                 controllers.Application.teamMember(name: String)
+GET     /training                   controllers.Application.training()
+GET     /resources                  controllers.Application.resources()
+GET     /sponsors                   controllers.Application.sponsors()
+GET     /sponsors/2017              controllers.Application.sponsors2017()
+GET     /sponsors/2016              controllers.Application.sponsors2016()
+GET     /sponsors/2005              controllers.Application.sponsors2005()
+GET     /sponsors/become_a_sponsor  controllers.Application.become_a_sponsor()
+GET     /sponsors/submit_sponsor_form  controllers.Application.submit_sponsor_form()
+GET     /singles                    controllers.Application.singles()
+GET     /bikems                     controllers.Application.bikems()
+GET     /endurance_events           controllers.Application.endurance_events()
+GET     /fundraisers           	    controllers.Application.fundraisers()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

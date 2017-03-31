@@ -1,0 +1,162 @@
+@()(implicit request: play.api.mvc.Request[Any])
+
+@main(title = "Training", calendar = true) {
+<script>
+
+  $(document).ready(function() {
+
+    var date = new Date();
+    var d = date.getDate();
+    var m = date.getMonth();
+    var y = 2016;
+    var april = {
+      off: [2, 4, 7, 9, 11, 14, 16, 18, 19, 21, 24, 27, 28],
+      easy: []
+    }
+
+    function month(off, easy, moderate, hard) {
+
+    }
+
+    $('#calendar').fullCalendar({
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,basicWeek,basicDay'
+      },
+      editable: false,
+      events: [
+        { start: new Date(y, 3,  4), end: new Date(y, 3, 10), title: 'Week 1' },
+        { start: new Date(y, 3,  5), title: '1 hour - easy'          },
+        { start: new Date(y, 3,  7), title: '1 hour - moderate'      },
+        { start: new Date(y, 3,  9), title: '1 hour - easy'          },
+        { start: new Date(y, 3, 10), title: '1 hour - easy'          },
+        { start: new Date(y, 3, 11), end: new Date(y, 3, 17), title: 'Week 2' },
+        { start: new Date(y, 3, 12), title: '1 hour - moderate'      },
+        { start: new Date(y, 3, 14), title: '1.5 hours - easy'       },
+        { start: new Date(y, 3, 16), title: '1 hour - hard'          },
+        { start: new Date(y, 3, 17), title: '1.5 hours - easy'       },
+        { start: new Date(y, 3, 18), end: new Date(y, 3, 24), title: 'Week 3' },
+        { start: new Date(y, 3, 19), title: '1.5 hours - moderate'   },
+        { start: new Date(y, 3, 21), title: '1 hour - easy'          },
+        { start: new Date(y, 3, 23), title: '1.5 hours - hard'       },
+        { start: new Date(y, 3, 24), title: '2 hours - easy'         },
+        { start: new Date(y, 3, 25), end: new Date(y, 4,  1), title: 'Week 4' },
+        { start: new Date(y, 3, 26), title: '1 hour spin - easy'     },
+        { start: new Date(y, 3, 28), title: '1 hour spin - moderate' },
+        { start: new Date(y, 3, 20), title: '1 hour - easy'          },
+        { start: new Date(y, 4,  1), title: '1 hour spin - easy'     },
+        { start: new Date(y, 4,  2), end: new Date(y, 4,  8), title: 'Week 5' },
+        { start: new Date(y, 4,  2), title: '1 hour - moderate'      },
+        { start: new Date(y, 4,  4), title: '1 hour - hard'          },
+        { start: new Date(y, 4,  5), title: '1.5 hours - easy'       },
+        { start: new Date(y, 4,  7), title: '1.5 hours - moderate'   },
+        { start: new Date(y, 4,  8), title: '2 hours - easy'         },
+        { start: new Date(y, 4,  9), end: new Date(y, 4, 15), title: 'Week 6' },
+        { start: new Date(y, 4, 10), title: '1.5 hours - moderate'   },
+        { start: new Date(y, 4, 11), title: '1 hour - easy'          },
+        { start: new Date(y, 4, 12), title: '1 hour - hard'          },
+        { start: new Date(y, 4, 14), title: '2 hours - moderate'     },
+        { start: new Date(y, 4, 15), title: '2.5 hours - easy'       },
+        { start: new Date(y, 4, 16), end: new Date(y, 4, 22), title: 'Week 7' },
+        { start: new Date(y, 4, 17), title: '1.5 hours - hard'       },
+        { start: new Date(y, 4, 18), title: '1 hour - easy'          },
+        { start: new Date(y, 4, 19), title: '1.5 hours - moderate'   },
+        { start: new Date(y, 4, 21), title: '2 hours - moderate'     },
+        { start: new Date(y, 4, 22), title: '3 hours - easy'         },
+        { start: new Date(y, 4, 23), end: new Date(y, 4, 29), title: 'Week 8' },
+        { start: new Date(y, 4, 24), title: '1 hour - easy'          },
+        { start: new Date(y, 4, 26), title: '1 hour - moderate'      },
+        { start: new Date(y, 4, 29), title: '1.5 hours - easy'       },
+        { start: new Date(y, 4, 30), end: new Date(y, 5, 5), title: 'Week 9' },
+        { start: new Date(y, 4, 31), title: '1.5 hours - easy'       },
+        { start: new Date(y, 5,  1), title: '1.5 hours - hard'       },
+        { start: new Date(y, 5,  2), title: '1 hour - easy'          },
+        { start: new Date(y, 5,  4), title: '3.5 hours - easy'       },
+        { start: new Date(y, 5,  5), title: '2.5 hours - moderate'   },
+        { start: new Date(y, 5,  6), end: new Date(y, 5, 12), title: 'Week 10' },
+        { start: new Date(y, 5,  7), title: '1 hour - easy'          },
+        { start: new Date(y, 5,  8), title: '2 hours - hard'         },
+        { start: new Date(y, 5,  9), title: '1 hour - easy'          },
+        { start: new Date(y, 5, 11), title: '3 hours - moderate'     },
+        { start: new Date(y, 5, 12), title: '4 hours - easy'         },
+        { start: new Date(y, 5, 13), end: new Date(y, 5, 19), title: 'Week 11' },
+        { start: new Date(y, 5, 15), title: '1 hour - hard'          },
+        { start: new Date(y, 5, 16), title: '1.5 hours - moderate'   },
+        { start: new Date(y, 5, 18), title: '1 hour - hard'          },
+        { start: new Date(y, 5, 19), title: '1.5 hours - easy'       },
+        { start: new Date(y, 5, 20), end: new Date(y, 5, 24), title: 'Week 12' },
+        { start: new Date(y, 5, 22), title: '1 hour - moderate'      },
+        { start: new Date(y, 5, 24), title: '30-45 mins - easy, HAVE FUN'     },
+        { start: new Date(y, 5, 25), end: new Date(y, 5, 26), title: 'CCG!' },
+      ]
+    });
+
+  });
+
+</script>
+
+<div id="pagemenu">
+    <span class="page-title">Training</span>
+</div>
+
+<div class="smokebox">
+<h2>Cape Cod Get Away 2016 Training Program:</h2>
+
+<p>
+This is a basic program that has been put together to help you get ready for your MS ride at the end of June.  If you are able to follow it, you should be able to complete your ride successfully and comfortably.  Feel free to substitute spinning and/or indoor cycling classes as necessary.  It’s ok to switch days around if necessary, just make sure you are getting in the hours per week.  This program has been put together utilizing Rate of Perceived Exertion because everyone can use this scale.  Feel free to use Heart Rate Zones or any other metric you are used to.
+</p>
+
+<p>
+Please don’t hesitate to check out my website at pedalpowertraining.com and contact me if you are in need of a more customized training plan, bicycle fit, or any other service that I offer.
+</p>
+
+<p>ENJOY!</p>
+<p>Sara Bresnick</p>
+</div>
+
+<div class="smokebox">
+<h3>A few tips to keep in mind before starting:</h3>
+<ol>
+<li> MAKE SURE YOU ARE MEDICALLY CLEARED TO TAKE PART IN THIS PROGRAM BEFORE STARTING.</li>
+<li> Make sure your bicycle is in good working condition</li>
+<li> Abide by all of the rules of the road </li>
+<li> Make sure you are eating and drinking adequately during your ride and after.</li>
+<li> Ride with friends (especially on the weekends) for motivation</li>
+<li> It is good to stretch and do some core work a couple times per week to balance your body out.</li>
+<li> Get enough sleep and rest so your body can recovery from your workouts</li>
+<li> Have fun!</li>
+</ol>
+</div>
+
+<div class="smokebox">
+<h3>Perceived Exertion Scale (RPE)</h3>
+
+<p>When exercising, it's important to monitor your intensity to make sure you're working at a pace that is challenging enough to help you reach your goals, but not so hard that you don’t recover and aren’t ready for your next workout.</p>
+
+<p>One way to do that is to use a Perceived Exertion Scale. The standard is the Borg Scale of Perceived Exertion, which ranges from 0-20.  In 1986, the American College of Sports Medicine revised it to a scale of 0 to 10 with zero being "nothing" and 10 being "very, very heavy - almost max". (Source- ACE Instructor Manual</p>
+
+For “easy/recovery” workouts RPE level should be: 1-3
+For “moderate/endurance” workouts RPE level should be: 4-6
+For “hard” workouts RPE level should be: 7-9
+
+<ul>
+<li>Level 1: Watching TV and eating potato chips</li>
+<li>Level 2: Comfortable and could maintain this pace all day long</li>
+<li>Level 3: Still comfortable, but am breathing a bit harder</li>
+<li>Level 4: Sweating a little, but feel good and can carry on a conversation effortlessly</li>
+<li>Level 5: Just above comfortable, am sweating more and can still talk easily</li>
+<li>Level 6: Can still talk, but am slightly breathless</li>
+<li>Level 7: Can still talk, but I don't really want to. I'm sweating like a pig</li>
+<li>Level 8: Can grunt in response to questions; can only keep this pace for a short time</li>
+<li>Level 9: I am probably going to die</li>
+<li>Level 10: I am dead</li>
+</ul>
+<img src="@routes.Assets.at("images/training/scale.png")" width="100%"/>
+</div>
+
+<div class="smokebox">
+  <h3>Training Schedule</h3>
+  <div id='calendar'></div>
+</div>
+}

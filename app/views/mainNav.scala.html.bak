@@ -1,0 +1,32 @@
+@()(implicit request: play.api.mvc.Request[Any])
+
+@item(path: String, name: String, subitems: String = "", transient: Boolean = false) = {
+  @defining(request.path == path) { selected =>
+    @if(!selected || !transient) {
+      <li>
+	<a class="@{if(selected) {"selected"}}" href="@path" @if(name=="Team Uniform"){target="_blank"}>@name</a>
+	@if(subitems) {
+	    <ul>
+	      <li><a href="/bikems">bikeMS</a></li>
+	      <li><a href="/endurance_events">Endurance Events</a></li>
+	      <li><a href="/fundraisers">Fundraisers</a></li>
+	    </ul>
+	}
+      </li>
+    }
+  }
+}
+
+<div id="site-map">
+  <div class="center">
+    <ul id="mainNav">
+    @item(path="/", name="Home", transient=true)
+    @item(path="#", name="Events", subitems = "test")
+    @item(path="/resources", name="Resources")
+    @item(path="/sponsors", name="Sponsors")
+    @item(path="/team", name="Team")
+    @item(path="https://teamorder.serviziocorse.com/index.aspx?pc=B718D44D-AF3E-4573-8E77-37BA47022805", name="Team Uniform")
+    @item(path="/training", name="Training")
+    </ul>
+  </div>
+</div>

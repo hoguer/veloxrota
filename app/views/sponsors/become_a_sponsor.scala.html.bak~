@@ -1,0 +1,197 @@
+@()(implicit request: play.api.mvc.Request[Any])
+
+@option_tag(option_value: String) = {
+  <option value="@option_value">@option_value</option>
+}
+
+@mainDev(title="Become a Sponsor") {
+  <div id="pagemenu">
+    <span class="page-title">Become a sponsor</span>
+  </div>
+
+  <div class="sponsors">
+
+    <h3>The Team</h3>
+    <p>Team Velox Rota (TVR) is made up of passionate athletes from around the U.S. participating in events ranging from multi-day endurance cycling events to racing up skyscrapers. Our Members unite through the common threads of fitness, helping others, and having a good time along the way! Since its origin in 2005 when TVR was purely a cycling team and consisted of 18 riders, the team has exploded in size and success. With the consistent help of our personal donors, and team sponsors, we have raised over $1 million dollars, one of 3 teams in Greater New England area!</p>
+
+    <h3>The Cause</h3>
+    <p>Multiple Sclerosis (MS) is the most widespread, unpredictable, disabling neurological disease of the central nervous system that does not currently have a cure. MS interrupts the flow of information within the brain and parts of the body with symptoms ranging in severity from numbness in limbs to paralysis.  You can develop MS at any age, but most people are diagnosed between the ages of 20 and 40. There are relapsing and remitting types of MS and progressive types, but the course is rarely predictable.  Researchers still don’t fully understand the causes of MS or why the rate of progression is so difficult to determine.The Multiple Sclerosis Foundation estimates that more than 400,000 people in the United States and about 2.5 million people around the world have MS. About 200 new cases are diagnosed each week in the United States. MS affects more than 22,000 people in Connecticut, Maine, Massachusetts, New Hampshire, Rhode Island & Vermont.   
+    </p>
+    <p>For more information about MS, click here: 
+      <a href="http://www.healthline.com/health/multiple-sclerosis/facts-statistics-infographic" target="_blank">
+	<img width="250" src="@routes.Assets.at("images/fight_ms.png")"/>
+      </a>
+    </p>
+
+    <h3>Become a Team Velox Rota Sponsor</h3>
+    <p>By sponsoring TVR in our efforts to combat MS, your company will be known as one that cares and supports your community.  Depending on the level you choose, your company will have more visibility through placement of your logo on marketing materials, team clothing and jerseys.   All companies who support TVR with in-kind donations/silent auction items will have their logo in the sponsorship section on our website.  There are specific needs for large events that TVR participates in with direct sponsorship opportunity, please inquire within.  
+    </p>
+
+    <table>
+      <tr>
+	<th>Sponsorship Perks</th>
+	<th>IN-KIND</th>
+	<th>FRIEND</th>
+	<th>ANGEL</th>
+	<th>SILVER</th>
+	<th>GOLD</th>
+	<th>PLATINUM</th>
+      </tr>
+      <tr>
+	<td>Website</td>
+	<td>&#10004;</td>
+	<td>&#10004;</td>
+	<td>&#10004;</td>
+	<td>&#10004;</td>
+	<td>&#10004;</td>
+	<td>&#10004;</td>
+      </tr>
+      <tr>
+	<td>Marketing Material</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>&#10004;</td>
+	<td>&#10004;</td>
+	<td>&#10004;</td>
+      </tr>
+      <tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>&#10004;</td>
+	<td>&#10004;</td>
+      </tr>
+      <tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>&#10004;</td>
+	<td>&#10004;</td>
+	<td>&#10004;</td>
+	<td>&#10004;</td>
+      </tr>
+      <tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td>&#10004;</td>
+      </tr>
+      <tr>
+	<th>Pricing</th>
+	<th></th>
+	<th>$250</th>
+	<th>$500</th>
+	<th>$1,000</th>
+	<th>$2,500</th>
+	<th>$5,000</th>
+      </tr>
+    </table>
+
+    <ul>
+      <li>FRIEND: $250 Sponsorship will have a logo placement on our website </li>
+      <li>ANGEL $500 Sponsorship will have logo placement on our riding jersey and website SILVER $1,000 Sponsorship will have a logo placement on our riding jersey, website, and all other marketing material throughout that donation year.</li>
+      <li>GOLD $2,500 Sponsorship will have a logo placement on our riding jersey, logo on our team t-shirt, website and all other marketing material. </li>
+      <li>PLATINUM $5,000 Sponsorship will be a stand alone elite Sponsorship for the 2017 season.  Company logo will be placed in elite locations on the team riding jersey and shorts, as well as team t-shirt.  Your company will also receive special recognition on all included marketing information from Team Velox Rota.  </li>
+    </ul>
+
+    <form action="mailto:hoguer711&#64;gmail.com" method="post" enctype="multipart/form-data">
+      <label for="firstname">First Name</label>
+      <input type="text" name="firstname">
+
+      <label for="lastname">Last Name</label>
+      <input type="text" name="lastname">
+      </br>
+
+      <label for="companyname">Company Name</label>
+      <input type="text" name="companyname">
+      </br>
+
+      <label>Address</label>
+      </br>
+
+      <label for="city">City</label>
+      <input type="text" name="city">
+
+      <label for="state">State</label>
+      <select name="state">
+	@option_tag(option_val="AL")
+	@option_tag(option_val="AK")
+	@option_tag(option_val="AZ")
+	@option_tag(option_val="AR")
+	@option_tag(option_val="CA")
+	@option_tag(option_val="CO")
+	@option_tag(option_val="CT")
+	@option_tag(option_val="DE")
+	@option_tag(option_val="FL")
+	@option_tag(option_val="GA")
+	@option_tag(option_val="HI")
+	@option_tag(option_val="ID")
+	@option_tag(option_val="IL")
+	@option_tag(option_val="IN")
+	@option_tag(option_val="IA")
+	@option_tag(option_val="KS")
+	@option_tag(option_val="KY")
+	@option_tag(option_val="LA")
+	@option_tag(option_val="ME")
+	@option_tag(option_val="MD")
+	@option_tag(option_val="MA")
+	@option_tag(option_val="MI")
+	@option_tag(option_val="MN")
+	@option_tag(option_val="MS")
+	@option_tag(option_val="MO")
+	@option_tag(option_val="MT")
+	@option_tag(option_val="NE")
+	@option_tag(option_val="NV")
+	@option_tag(option_val="NH")
+	@option_tag(option_val="NJ")
+	@option_tag(option_val="NM")
+	@option_tag(option_val="NY")
+	@option_tag(option_val="NC")
+	@option_tag(option_val="OH")
+	@option_tag(option_val="OK")
+	@option_tag(option_val="OR")
+	@option_tag(option_val="PA")
+	@option_tag(option_val="RI")
+	@option_tag(option_val="SC")
+	@option_tag(option_val="SD")
+	@option_tag(option_val="TN")
+	@option_tag(option_val="TX")
+	@option_tag(option_val="UT")
+	@option_tag(option_val="VT")
+	@option_tag(option_val="VA")
+	@option_tag(option_val="WA")
+	@option_tag(option_val="WV")
+	@option_tag(option_val="WI")
+	@option_tag(option_val="WY")
+      </select>
+
+      <label for="zip">Zip</label>
+      <input type="text" name="zip">  
+
+      <label for="sponsorshiplevel">Sponsorship Level</label>
+      <select name="sponsorshiplevel">
+	@option_tag(option_val="In-kind")
+	@option_tag(option_val="Friend")
+	@option_tag(option_val="Angel")
+	@option_tag(option_val="Silver")
+	@option_tag(option_val="Gold")
+	@option_tag(option_val="Platinum")
+      </select>
+
+      <label for="logo">Logo</label>
+      <input type="file" name="logo" maxlength=50 allow="text/*" >
+
+      <p>For more information please email our Development Director, Rachael Bubbs at <a href="mailto:Rachael&#64;veloxrota.org">Rachael&#64;veloxrota.org</a>.  Please mail all checks payable to Team Velox Rota, Inc to 519 Somerville Ave, #247 &#9787; Somerville, MA 02143</p>
+
+      <input type="submit" value="Submit">
+
+    </form>
+
+  </div>
+}

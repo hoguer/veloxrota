@@ -1,0 +1,33 @@
+@()(implicit request: play.api.mvc.Request[Any])
+
+@main(title="Kit") {
+
+  <div class="kit">
+    <h3 class="tvr_header">TVR Verge Custom Store</h3>
+    <p>New for 2017 we are switching our vendor to Verge!  The design will not be changing drastically from 2016.  It is not a team requirement that you buy this kit – <b>it is optional</b>.  However, if you can swing the cost, you will enjoy wearing the team gear and it’ll be great to have colorful TVR representation during all of the rides during throughout the year.  Kit options include:
+</p>
+
+    <div id="kit_wrapper">
+      <div id="kit_image">
+	<a href="https://shop.vergesport.com/" target="_blank"><img src="@routes.Assets.at("images/team_gear/verge_shirt.png")"/></a> <br>
+	(Click jersey to access team store)<br>
+	Team Store Password:  TVR17 <br>
+	(case sensitive) 
+      </div>
+      <div id="kit_list">
+	<ul>
+	  <li>No Sleeve Jersey</li>
+	  <li>Tri Top Jersey</li>
+	  <li>Short Sleeve Jersey</li>  
+	  <li>Shorts</li>  
+	  <li>Bib Shorts</li>  
+	  <li>Vest</li>  
+	  <li>Jacket</li>  
+	  <li>Arm Warmers</li>  
+	  <li>Cycling Cap</li>  
+	  <li>Summer Gloves</li>  
+	</ul>
+      </div>
+    </div>
+  </div>
+}
