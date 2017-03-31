@@ -113,10 +113,6 @@ object Application extends Controller {
   	Ok(views.html.team.why_i_ride())
   }
 
-  def singles = Action { implicit request =>
-    Ok(views.html.singles())
-  }
-
   def bikems = Action { implicit request =>
     Ok(views.html.bikems())
   }
