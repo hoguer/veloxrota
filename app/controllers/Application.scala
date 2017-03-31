@@ -37,7 +37,7 @@ object Application extends Controller {
     }
 
   def index = DBAction { implicit rs =>
-    val (_, goal, raised) = TeamFundraising.findByYear(year).getOrElse((0, 0.0, 0.0))
+    val (yr, event_id, goal, raised) = TeamFundraising.findByYearAndEvent(year, 1).getOrElse((0, 0, 0.0, 0.0))
     val percent = 100d.min(raised * 100 / goal).round
     val goalStr = formatDollars(goal)
     val raisedStr = formatDollars(raised)
@@ -57,6 +57,21 @@ object Application extends Controller {
           image = imgSrc)
     }
     Ok(views.html.team.teamMain(members))
+  }
+
+  def event_team(event_id: Int) = DBAction { implicit rs =>
+    val rows = TeamMembers.findAllForYearAndEventId(year, event_id)
+    val members = rows.map {
+      case (id, year, name, role, link, raised, pos) =>
+        val m = TeamMember(id, name, role, link, defaultMugShotPath, formatDollars(raised))
+        val imgPath = "images/team/" + m.name.toLowerCase.replace(' ', '_').replace(".", "") + ".jpg"
+        val url = current.resource("public/" + imgPath)
+        val imgSrc = url.map(_ => imgPath).getOrElse(defaultMugShotPath)
+        m.copy(
+          link = "/team/" + m.name.replace(" ", "-").replace(".", ""),
+          image = imgSrc)
+    }
+    Ok(views.html.team.event_team(members))
   }
 
   def teamMember(name: String) = DBAction { implicit rs =>
@@ -105,8 +120,10 @@ object Application extends Controller {
   	Ok(views.html.team.champions())
   }
 
-  def event_teams = Action { implicit request =>
-  	Ok(views.html.team.event_teams())
+  def event_teams = DBAction { implicit rs =>
+      val rows = Events.findAllForType(1)
+      val events = rows.map(x => (Event.apply _).tupled(x))
+      Ok(views.html.team.event_teams(events))
   }
 
   def why_i_ride = Action { implicit request =>

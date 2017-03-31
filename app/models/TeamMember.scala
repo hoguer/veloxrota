@@ -24,6 +24,9 @@ object TeamMembers {
   def findAllForYear(year: Int)(implicit s: Session) =
     table.filter(_.year === year).sortBy(_.pos).list
 
+  def findAllForYearAndEventId(year: Int, event_id: Int)(implicit s: Session) =
+    table.filter(_.year === year).sortBy(_.pos).list
+
   def findLinkByName(name: String, year: Int)(implicit s: Session) =
     table.filter(_.year === year).filter(_.name like name).map(_.link).firstOption
 

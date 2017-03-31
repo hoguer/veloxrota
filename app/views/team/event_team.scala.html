@@ -1,0 +1,17 @@
+@(members: Seq[TeamMember])(implicit request: play.api.mvc.Request[Any])
+
+@main(title = "Team", bodyId="team") {
+  <div id="pagemenu">
+    <span class="page-title">Team Roster - @members.size Members</span>
+  </div>
+
+  <div id="roster">
+    @members.map { member =>
+      <span class="member">
+        <a href="@member.link"><img src="@routes.Assets.at(member.image)" /></a>
+        <a href="@member.link"><span class="name">@member.name</span></a>
+        <span class="title">@member.role - @member.raised</span>
+      </span>
+    }
+  </div>
+}

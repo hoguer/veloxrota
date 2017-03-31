@@ -1,11 +1,14 @@
-@()(implicit request: play.api.mvc.Request[Any])
+@(events: List[Event])(implicit request: play.api.mvc.Request[Any])
 
 @mainDev(title="Event Teams") {
   <div id="pagemenu">
     <span class="page-title">Event Teams</span>
   </div>
 
-  <div class="sponsors">
-    <p>Page in progress</p>
+  <div class="event_teams">
+    @events.map { event =>
+      <div><a href="#">@event.name</a></div>
+    }
   </div>
+
 }

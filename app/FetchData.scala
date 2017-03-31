@@ -39,7 +39,7 @@ object FetchData {
         raised = md.group(1).replace(",", "").toFloat
       }
 
-      TeamFundraising.update(year, goal, raised)
+      TeamFundraising.update(year, 1, goal, raised)
       log.info("goal=" + goal + ", raised=" + raised)
 
       if (!memberLinks.isEmpty) {
