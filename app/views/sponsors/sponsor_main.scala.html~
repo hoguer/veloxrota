@@ -1,9 +1,0 @@
-@()(content: Html)(implicit request: play.api.mvc.Request[Any])
-
-@sponsor(sponsor_url: String, logo_filename: String) = {
-  <span class="sponsor">
-    <a href="@sponsor_url" target="_blank">
-      <img width="250" src="@routes.Assets.at("images/sponsors/" + logo_filename)"/>
-    </a>
-  </span>
-}
