@@ -12,7 +12,7 @@ import play.api.data._
 import play.api.data.Forms._
 
 object Application extends Controller {
-  val year = 2016
+  val year = 2017
   val defaultMugShotPath = "images/team/nophoto.png"
   private val currencyFormatter = new DecimalFormat("$#,##0")
 
@@ -114,15 +114,15 @@ object Application extends Controller {
   }
 
   def bikems = Action { implicit request =>
-    Ok(views.html.bikems())
+    Ok(views.html.events.bikems())
   }
 
   def endurance_events = Action { implicit request =>
-    Ok(views.html.endurance_events())
+    Ok(views.html.events.endurance_events())
   }
 
   def fundraisers = Action { implicit request =>
-    Ok(views.html.fundraisers())
+    Ok(views.html.events.fundraisers())
   }
 
   private  def sendEmail(sponsorData: SponsorData) {
