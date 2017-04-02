@@ -179,6 +179,7 @@ ul#mainNav li:hover ul li a {
 h3.tvr_header,
 body#home h3,
 body#sponsors h3,
+body#training h3,
 body#events h3 {
     color:#009fcf;
     font-size:26px;
