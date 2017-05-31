@@ -176,6 +176,7 @@ ul#mainNav li:hover ul li,
 ul#mainNav li:hover ul li a {
     display:block;
 }
+h3,
 h3.tvr_header,
 body#home h3,
 body#sponsors h3,
@@ -257,6 +258,7 @@ input.submit {
 }
 
 /* The Modal (background) */
+.champions .modal,
 .become_a_sponsor .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -273,7 +275,7 @@ input.submit {
 }
 
 /* Modal Content */
-.become_a_sponsor .modal-content {
+.modal .modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
@@ -282,15 +284,15 @@ input.submit {
 }
 
 /* The Close Button */
-.become_a_sponsor .close {
+.modal .close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.become_a_sponsor .close:hover,
-.become_a_sponsor .close:focus {
+.modal .close:hover,
+.modal .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
@@ -303,6 +305,9 @@ input.submit {
     font-size:14px;
     margin-left:380px;
     font-family: gesta, 'Myriad Pro', 'Lucida Grande', 'Trebuchet', 'Helvetica', 'Arial', sans-serif;    
+}
+.modal .modal-content #modal-text {
+    margin-right:40px;
 }
 #root #content p.active_wear_images {
     text-align:center;
