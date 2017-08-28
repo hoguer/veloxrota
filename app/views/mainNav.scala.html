@@ -20,6 +20,12 @@
 	      <li><a href="/sponsors/become_a_sponsor">Become a Sponsor</a></li>
 	    </ul>
 	}
+        @if(name=="Team") {	    
+	    <ul>
+	      <li><a href="/team/champions">Champions</a></li>
+	      <li><a href="/teamMain">Event Teams</a></li>
+	    </ul>
+	}
         @if(name=="Team Gear") {
             <ul>
               <li><a href="/team_gear/active_wear">Active Wear</a></li>
@@ -37,8 +43,8 @@
     @item(path="/", name="Home", transient=true)
     @item(path="#", name="Events", subitems=true)
     @item(path="/resources", name="Resources")
-    @item(path="/sponsors", name="Sponsors", subitems=true)
-    @item(path="/teamMain", name="Team")
+    @item(path="#", name="Sponsors", subitems=true)
+    @item(path="#", name="Team", subitems=true)
     @item(path="#", name="Team Gear")
     @item(path="/training", name="Training")
     </ul>

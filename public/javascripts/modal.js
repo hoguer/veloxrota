@@ -31,11 +31,14 @@ function getChampionModalText(champion, firstHalfOfText) {
         secondHalfOfText = ' I\'m not shy about sharing my journey with MS, as I wish to empower others living with this disease. Every hour of every day, someone is diagnosed with MS.  That’s why I ride with TVR, so that I can raise funds to support cutting-edge research, programs, and services for everyone impacted by MS. Ending MS means no one will hear the words "You have MS" ever again.';
         break;
     case 'sharonNY':
-        secondHalfOfText = ' She then kindly asked for my name, and if she could put it on her bandana and the paper sign that said “I Ride For”.  This touched my heart, I thanked her, and this is when the great friendship between Rachael and myself began. I learned more about TV, and their participation in other bikeMS events, Climb to the Top and MuckFest, as well as all their fundraising events, like Rachael’s BootCamp for MS and Cruising for a Cause.  How can I not like a team who does so much for people like me who have MS? Thank you for all that you do!';
+        secondHalfOfText = ' She then kindly asked for my name, and if she could put it on her bandana and the paper sign that said “I Ride For”.  This touched my heart, I thanked her, and this is when the great friendship between Rachael and myself began. I learned more about TVR, and their participation in other bikeMS events, Climb to the Top and MuckFest, as well as all their fundraising events, like Rachael’s BootCamp for MS and Cruising for a Cause.  How can I not like a team who does so much for people like me who have MS? Thank you for all that you do!';
         break;
     case 'nancyMA':
         secondHalfOfText = ' He promised her he would do everything he could to fight the disease, so he had started Team Velox Rota in 2005.  It was then that I told him I had MS and I have been volunteering at the Cape Cod Getaway for years.  Every year since, I cheer on all the TVR members, you are all AMAZING.   Every year I look forward to being at most of the team events cheering them on.  I am so grateful for Mike, Rachael and all of TVR for their commitment and determination.  It doesn\'t matter if it is rain or shine, you are out there riding for me and everyone that has MS.  I\'m proud to be a TVR member!';
         break;
+    case 'maggieCT':
+	secondHalfOfText = ' One positive aspect of living with MS is the group of dedicated individuals who are working hard to raise awareness and money to END MS! I learned about TVR through my Walk MS team tri-captain. She attended one of their annual fundraising events and just gushed to me at how wonderful it was. It is always exciting to learn how amazingly well other teams are doing. After all, we are all working towards the same goals.';
+	break;
     default:
         secondHalfOfText = '';
     }
