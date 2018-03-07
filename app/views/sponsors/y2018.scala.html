@@ -1,0 +1,30 @@
+@()(implicit request: play.api.mvc.Request[Any])
+
+@item(sponsor_url: String, logo_filename: String) = {
+  <span class="sponsor">
+    <a href="@sponsor_url" target="_blank">
+      <img width="250" src="@routes.Assets.at("images/sponsors/" + logo_filename)"/>
+    </a>
+  </span>
+}
+
+@main(title="2018 Sponsors") {
+  <div id="pagemenu">
+    <span class="page-title">2018 Sponsors</span>
+  </div>
+
+  <div class="sponsors">
+
+    @item(sponsor_url="#", logo_filename="griffin.png")
+    @item(sponsor_url="https://www.maximumbev.com/", logo_filename="maximum-beverage-logo.png")
+    @item(sponsor_url="http://firstresponsecs.com/", logo_filename="FirstResponse.png")
+    @item(sponsor_url="http://www.sheaconcrete.com", logo_filename="shea.png")
+    @item(sponsor_url="http://www.hdibeer.com/", logo_filename="HDI.png")
+    @item(sponsor_url="http://www.natgolaw.com", logo_filename="Nathanson.bmp")
+    @item(sponsor_url="http://cambridgereprographics.com/", logo_filename="cambridgerepro.png")
+    @item(sponsor_url="http://www.southbridgebicycles.com/", logo_filename="SBBIKES_logo.png")
+    @item(sponsor_url="#", logo_filename="SCP_logo.png")
+    @item(sponsor_url="http://www.tms.com/", logo_filename="TMS_logo.png")
+
+  </div>
+}

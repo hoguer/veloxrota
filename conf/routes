@@ -15,6 +15,7 @@ GET     /team/:name                 	controllers.Application.teamMember(name: St
 GET     /training                   	controllers.Application.training()
 GET     /resources                  	controllers.Application.resources()
 GET     /sponsors                   	controllers.Application.sponsors()
+GET     /sponsors/2018              	controllers.Application.sponsors2018()
 GET     /sponsors/2017              	controllers.Application.sponsors2017()
 GET     /sponsors/2016              	controllers.Application.sponsors2016()
 GET     /sponsors/2005              	controllers.Application.sponsors2005()

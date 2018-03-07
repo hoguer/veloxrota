@@ -9,7 +9,7 @@ import play.api.Play.current
 object FetchData {
   import controllers.Application.year
 
-  val url = new URL("http://main.nationalmssociety.org/site/TR/Bike/MAMBikeEvents?team_id=491542&pg=team&fr_id=28124")
+  val url = new URL("http://main.nationalmssociety.org/site/TR/Bike/MAMBikeEvents?team_id=533570&pg=team&fr_id=29299")
   val memberRegex = """<a href=\"(http://main.nationalmssociety.org/site/TR/Bike/MAMBikeEvents\?px=[^\"]*)\">([\w\s\'\-]+)</a>\s*</div>\s*<div class="team-roster-participant-raised">\$([\d\,\.]+)""".r
   val goalRegex = """Goal\s+\$([\d\,\.]+)""".r
   val achievedRegex = """Achieved\s+\$([\d\,\.]+)""".r
