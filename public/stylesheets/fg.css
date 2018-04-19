@@ -317,7 +317,7 @@ input.submit {
 }
 
 div#kit_wrapper {
-    width: 65%;
+    width: 92%;
     margin: 0 auto;
     margin-top:40px;
 }
@@ -329,13 +329,10 @@ div#kit_wrapper div#kit_image {
     font-size:14px;
 }
 
-div#kit_wrapper div#kit_list {
-    display:inline-block;
-    padding-left:10%;
-}
-
-div#kit_wrapper div#kit_list ul{
-    margin-top:0px;
+div#kit_wrapper div#kit_list ul {
+    display: inline-block;
+    padding-left: 15%;
+    margin-top: 30px;
 }
 div#kit_wrapper div#kit_list ul li{
     padding-bottom:20px;
